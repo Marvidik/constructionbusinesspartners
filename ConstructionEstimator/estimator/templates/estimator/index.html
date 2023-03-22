@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Construction Bussiness Partners</title>
+    <link rel="stylesheet" href="{% static 'estimator/style.cs'%}s">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" >
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="{% static 'estimator/assets/bootstrap/css/bootstrap.min.css'%}">
+   
+    <link rel="stylesheet" href="{% static 'estimator/assets/bootstrap/css/bootstrap-grid.min.css'%}">
+    <link rel="stylesheet" href="{% static 'estimator/assets/swiper/swiper.min.css'%}">
+</head>
+<body>
+    <header>
+       <nav>
+            <a href="#" class="brand">Business Partners</a>
+            <div class="menu-btn"></div>
+            <div class="navigation">
+                <div class="navigation-items" id="menu">
+                    <a href="#">Home </a>
+                    <a href="#about">About </a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#contact">Contact </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    {% if messsages %}
+        {% for message in messages %}
+            <div class="alert alert-dismissible alert-success">
+                <button type="button" class="close" data-dismissible="alert">x</button>
+                <strong>{{message}}</strong>
+            </div>
+        {% endfor %}
+    {% endif %}
+
+    <section class="home" id="home">
+
+        <img class="img-slide active" src="{% static 'estimator/assets/img/banner 1.jpg'%}" alt="banner img"></img>
+        <img class="img-slide" src="{% static 'estimator/assets/img/banner 2.jpg'%}" alt="banner img"></img>
+        <img class="img-slide" src="{% static 'estimator/assets/img/banner 3.jpg'%}" alt="banner img"></img>
+ 
+
+        <div class="content active">
+            <h1> Get Awarded <br><span>More Proposals</span></h1>
+            <p>Construction Business Partners will help you eliminate your sales and estimating costs. You only pay us commissions when you get paid from the General Contractor. No risk, 100% partnership. No busy subcontractor who has a good pipleline of work coming in monthly has the time to sit in front of their computer to work on all the ITBs and RFPs that come in their inbox. That is where we come in. Allow us, your business partners to do the estimating and sales for you, while you work on what's truly important, on-site service delivery.</p>
+            <a href="#contact">Contact Us</a>
+        </div>
+
+        
+        <div class="content">
+            <h1> Budget<br><span>For building</span></h1>
+            <p>Construction Business Partners will help you eliminate your sales and estimating costs. You only pay us commissions when you get paid from the General Contractor. No risk, 100% partnership. No busy subcontractor who has a good pipleline of work coming in monthly has the time to sit in front of their computer to work on all the ITBs and RFPs that come in their inbox. That is where we come in. Allow us, your business partners to do the estimating and sales for you, while you work on what's truly important, on-site service delivery.</p>
+            <a href="#contact">Contact Us</a>
+        </div>
+
+        
+        <div class="content">
+            <h1> Plan<br><span>With Ease</span></h1>
+            <p>Construction Business Partners will help you eliminate your sales and estimating costs. You only pay us commissions when you get paid from the General Contractor. No risk, 100% partnership. No busy subcontractor who has a good pipleline of work coming in monthly has the time to sit in front of their computer to work on all the ITBs and RFPs that come in their inbox. That is where we come in. Allow us, your business partners to do the estimating and sales for you, while you work on what's truly important, on-site service delivery.</p>
+            <a href="#contact">Contact Us</a>
+        </div>
+        <div class="media-icons">
+            <a href="#"> <i class="fab fa-facebook"></i></a>
+            <a href="#"> <i class="fab fa-instagram"></i></a>
+            <a href="#"> <i class="fab fa-twitter"></i></a>
+            <a href="#"> <i class="fa-solid fa-envelope"></i></a>
+           
+        </div>
+        <div class="slider-navigation">
+           <div class="nav-btn active"> </div> 
+           <div class="nav-btn"> </div> 
+           <div class="nav-btn"> </div> 
+        </div>
+    </section>
+
+
+    <div class="about-us-area section-padding-100-100"   id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading">
+                        <h6>Platform for project management</h6>
+                        <h2>Why Us</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="row">
+                        <!-- About Text -->
+                        <div class="col-md-12">
+                            <div class="textAlignment">
+                                <p>
+                                    Working in Estimating and Sales can be very exhausting. You get thousands of bids and win less than one percent of those bids. General Contractors rely on you to help them arrange a budget for the owner and more times than not, they don't even win the bids.But you need to keep submitting those bids so you can maintain the reationship with that company!  After submitting so many proposals, you could easily get tired and discouraged. That is why you need us. We are experts at estimating and following up with the GC and we don't get tired or discouraged. We will bid all your ITBz and ask  the GC for more. And we will follow up on those bids and confirm with the GC if they won the project. Once we confirm the GC won, we follow up until we win.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- About Button Group -->
+                        <div class="col-md-12">
+                            <div class="about-btn-group mt-5">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                    <a href="#" class="fitness-btn btn-2">Contact Us</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="about-thumb">
+                        <img src="{% static 'estimator/assets/img/small-banner-1.jpg'%}" alt="The company name" style="border-radius: 10px;" width="95%" height="95%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+   
+        <div class="work-section">
+            <div class="container p-5 shadow-lg ">
+               
+                    <div class="col-head">
+                        <hr class="work-line">
+                        <h5 class="line-header px-4">We work with</h5>
+                        <hr class="work-line">
+                    </div>
+                    <div class="col-md-8 col-sm-8 d-inline-flex ">
+                        <div class="col-md-8 col-list float-end">
+                            <ul class="first-list">
+                               
+                                    <li class="first-list-items py-1"><img src="{% static 'estimator/assets/img/rihgt ico.png'%}"
+                                            class="arrow-icon px-1" height="10px" alt="right icon">Concrete
+                                    </li>
+                               
+                                
+                                    <li class="first-list-items py-1"><img src="{% static 'estimator/assets/img/rihgt ico.png'%}"
+                                            class="arrow-icon px-1" height="10px" alt="right icon">Roofing
+                                        </li>
+                             
+                                    <li class="first-list-items py-1"><img src="{% static 'estimator/assets/img/rihgt ico.png'%}"
+                                            class="arrow-icon px-1" height="10px" alt="right icon">Painting
+                                        </li>
+                              
+                                
+                            </ul>
+
+                        </div>
+                        <div class="col-md-8 col-list">
+                            <ul class="first-list">
+                                
+                                    <li class="first-list-items py-1"><img src="{% static 'estimator/assets/img/rihgt ico.png'%}"
+                                            class="arrow-icon px-1" height="10px"
+                                            alt="right icon">Dry Wall</li>
+                               
+                                
+                                    <li class="first-list-items py-1"><img src="{% static 'estimator/assets/img/rihgt ico.png'%}"
+                                            class="arrow-icon px-1" height="10px" alt="right icon">Final Cleaning
+                                    </li>
+                                
+                            </ul>
+                        </div>
+
+                        
+
+                    </div>
+                
+            </div>
+        </div>
+   
+    <section class="why-section" id="pricing">
+        <div class="swiper-container testimonial-slider ">
+            
+                {% comment %} <div class="col-12">
+                    <div class="section-heading text-center">
+                        <h6>Platform for project management</h6>
+                        <h2>OUR PRICING PLAN</h2>
+                    </div>
+               
+            </div> {% endcomment %}
+            {% comment %} <div class="about-us-area section-padding-50-100">
+                
+                
+                    <div class="row">
+                        <div class="col-12 col-md-8">
+                            <div class="row">
+                                <!-- About Text -->
+                                <div class="col-md-12">
+                                    <div class="textAlignment">
+                                        <h2>“I have NO TIME to estimate projects”</h2><br>
+                                        <h5>-Every Contractor in America</h5>
+                                        <p>
+                                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto molestiae, ab voluptatem delectus quos alias a nemo ullam consectetur voluptates in eos ducimus velit. 
+                                       Dignissimos necessitatibus eligendi assumenda deserunt minus velit aut vel exercitationem reprehenderit.
+                                        </p>
+                                        <p>
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus suscipit consequatur iusto magni perferendis eveniet ullam nesciunt 
+                                        eligendi iste nemo cumque veniam commodi enim eos aliquam, alias quis corporis deserunt nisi adipisci culpa animi odio.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="about-thumb">
+                                <img src="{% static 'estimator/assets/img/Stats-img-400x400.png'%}" alt="The company name" style="border-radius: 10px; margin-top: 50px;" width="95%" height="95%">
+                            </div>
+                        </div>
+                    </div>
+                
+            </div> {% endcomment %}
+
+            <div class="about-us-area section-padding-50-100" >
+                
+                
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <div class="about-thumb">
+                            <img src="{% static 'estimator/assets/img/calc.jpg'%}" alt="The company name" style="border-radius: 10px; margin-top: 50px;" width="95%" height="95%">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-8">
+                        <div class="row">
+                            <!-- About Text -->
+                            <div class="col-md-12">
+                                <div class="textAlignment">
+                                    <h2>PRICING PLAN</h2><br>
+                                    <h5>Construction Business Partners Pricing </h5>
+                                    <p>
+                                        Our pricing model is unique. Why pay for estimating hundrends of jobs that you do not win. We do not charge you upfront fees for estimating your jobs or following up with the GC for you. We understand that not all jobs you bid come out as an Awarded contract. So we invented a partnership pricing model. We only get paid commissions when you get awarded the contract. The commission is Negotiable.
+                                    </p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            
+        </div>
+
+
+        {% comment %} <div class="about-us-area section-padding-50-50">
+                
+                
+            <div class="row">
+                <div class="col-12 col-md-8">
+                    <div class="row">
+                        <!-- About Text -->
+                        <div class="col-md-12">
+                            <div class="textAlignment">
+                                <h2>“I have NO TIME to estimate projects”</h2><br>
+                                <h5>-Every Contractor in America</h5>
+                                <p>
+                               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto molestiae, ab voluptatem delectus quos alias a nemo ullam consectetur voluptates in eos ducimus velit. 
+                               Dignissimos necessitatibus eligendi assumenda deserunt minus velit aut vel exercitationem reprehenderit.
+                                </p>
+                                <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus suscipit consequatur iusto magni perferendis eveniet ullam nesciunt 
+                                eligendi iste nemo cumque veniam commodi enim eos aliquam, alias quis corporis deserunt nisi adipisci culpa animi odio.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="about-thumb">
+                        <img src="{% static 'estimator/assets/img/s-calendar-img.png'%}" alt="The company name" style="border-radius: 10px; margin-top: 50px;" width="95%" height="95%">
+                    </div>
+                </div>
+            </div> {% endcomment %}
+        
+    </div>
+
+        </div>
+    </section>
+
+    <section class="section-3">
+        <div class="section-3-content">
+            
+
+            <div class="tabcontent">
+                <div class="col-12 col-md-6 px-2 col-sm-12">
+                    <div class="col-12 col-md-12">
+                        <div class="contact-title contactstep1">
+                            <p>Nice steps to get you started</p>
+                            <h3>How to get started</h3>
+                        </div>
+                    </div>
+                    <div class="row step1">
+                  
+                        {% comment %} <div class="col-12 col-md-2 col-sm-2">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <img src="{% static 'estimator/assets/img/Home-1-2-3.png'%}" alt="model_image" width="300px" height="500px" class="stepsimg">
+                            </div>
+                        </div> {% endcomment %}
+                                <div class="col-12 col-md-10 col-sm-10">
+                                    <div class="single-service-area mb-100">
+                                        <div class="course-content d-flex align-items-center">
+                                        
+                                            <h4>1.</h4>
+                                        </div>
+                                        <p>Reach out to us Call (Number) or email (email address) or fill the form </p>
+                                    </div>
+                                    <div class="single-service-area mb-100">
+                                        <div class="course-content d-flex align-items-center">
+                                        
+                                            <h4>2.</h4>
+                                        </div>
+                                        <p>We will have a brief meeting to see if slot is available in your area and if we are a good fit</p>
+                                    </div>
+
+                                    <div class="single-service-area mb-10">
+                                        <div class="course-content d-flex align-items-center">
+                                        
+                                            <h4>3.</h4>
+                                        </div>
+                                        <p>We set you up and start winning</p>
+                                    </div>                            
+
+                                </div>
+                     </div>
+                </div>
+                <a href="#contact"><button class="btn fitness-btn btn-2 mt-30">Contact Us</button></a>
+            </div>
+
+        </div>
+    </section>
+
+
+    
+    <section class="contact-area section-padding-20">
+        <div class="container">
+            <div class="row">
+                
+                {% comment %} <div class="col-12 col-md-6 px-2 col-sm-12">
+                    <div class="col-12 col-md-12">
+                        <div class="contact-title contactstep1">
+                            <p>Nice steps to get you started</p>
+                            <h3>How to get started</h3>
+                        </div>
+                    </div>
+                    <div class="row step1">
+                  
+                        {% comment %} <div class="col-12 col-md-2 col-sm-2">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <img src="{% static 'estimator/assets/img/Home-1-2-3.png'%}" alt="model_image" width="300px" height="500px" class="stepsimg">
+                            </div>
+                        </div> 
+                                <div class="col-12 col-md-10 col-sm-10">
+                                    <div class="single-service-area mb-100">
+                                        <div class="course-content d-flex align-items-center">
+                                        
+                                            <h4>1.</h4>
+                                        </div>
+                                        <p>Reach out to us Call (Number) or email (email address) or fill the form </p>
+                                    </div>
+                                    <div class="single-service-area mb-100">
+                                        <div class="course-content d-flex align-items-center">
+                                        
+                                            <h4>2.</h4>
+                                        </div>
+                                        <p>We will have a brief meeting to see if slot is available in your area and if we are a good fit</p>
+                                    </div>
+
+                                    <div class="single-service-area mb-10">
+                                        <div class="course-content d-flex align-items-center">
+                                        
+                                            <h4>3.</h4>
+                                        </div>
+                                        <p>We set you up and start winning</p>
+                                    </div>                            
+
+                                </div>
+                     </div> {% endcomment %}
+                </div>
+                <div class="col-12 col-md-6 px-4 col-sm-12"   id="contact">
+                    <div class="col-12 col-md-12">
+                        <div class="contact-title contactstep">
+                            <p>We are always here for you</p>
+                            <h3>Get in touch</h3>
+                        </div>
+                    </div>
+                    <div class="contact-content getstarted">
+                        <!-- Contact Form Area -->
+                        <div class="contact-form-area ">
+                            <form  method="post" action="{% url 'message' %}">
+                                {% csrf_token %}
+                                <div class="form-group">
+                                    {{form.name}}
+                                </div>
+                                <div class="form-group">
+                                    {{form.email}}
+                                </div>
+                                <div class="form-group">
+                                    {{form.subject}}
+                                </div>
+                                <div class="form-group">
+                                   {{form.message}}
+                                </div>
+                                <button class="btn fitness-btn btn-2 mt-30" name="sendMessage" type="submit">Contact Us</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+{% comment %} <div class="testimonial-container just">
+    <div class="testimonial">
+        <div class="section-heading text-center">
+            <h6>Platform for project management</h6>
+            <h2>Hear What Our Clients Has To Say</h2>
+        </div>
+        <div class="testimonial-text">
+            
+            <div class="user-text">
+                <i class="fas fa-quote-left"></i>
+                <p>
+                    Thanks to construction Bussiness Partner, i got my project estimated and delivered
+                </p>
+                <span>John Ryan, Project Manager</span>
+            </div>
+            <div class="user-text active-text">
+                <i class="fas fa-quote-left"></i>
+                <p>
+                    Construction Bussiness Partners are fast and efficient, it was nice working with them.
+                </p>
+                <span>Hikes ben , Project developer </span>
+            </div>
+            <div class="user-text">
+                <i class="fas fa-quote-left"></i>
+                <p>Construction Business Partners are the best for project estimation
+                </p>
+                <span>anna Ryan, Project Contractor</span>
+            </div>
+        </div>
+        <div class="testimonial-pic ">
+            <img src="{% static 'estimator/assets/img/user-1.jpg'%}"  class="user-pic" onclick="showReview()">
+            <img src="{% static 'estimator/assets/img/user-2.jpg'%}" class="user-pic active-pic" onclick="showReview()">
+            <img src="{% static 'estimator/assets/img/user-3.jpg'%}"  class="user-pic" onclick="showReview()">
+            
+        </div>
+    </div>
+    
+</div> {% endcomment %}
+
+    
+
+
+    <div class="container pb-4">
+        <div class="fitness-services-area section-padding-100-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2"></div>
+    
+                    <div class="col-md-8 justify-content-center text-center">
+                        <style>
+                            .faq-accordion {
+                              background-color: #eee;
+                              color: #444;
+                              cursor: pointer;
+                              padding: 18px;
+                              width: 100%;
+                              border: none;
+                              text-align: left;
+                              outline: none;
+                              font-size: 15px;
+                              transition: 0.4s;
+                            }
+                            
+                            .faq-active, .faq-accordion:hover {
+                              background-color: #ccc;
+                            }
+                            
+                            .faq-accordion:after {
+                              content: '\002B';
+                              color: #777;
+                              font-weight: bold;
+                              float: right;
+                              margin-left: 5px;
+                            }
+                            
+                            .faq-active:after {
+                              content: "\2212";
+                            }
+                            
+                            .panel {
+                              padding: 0 18px;
+                              background-color: white;
+                              max-height: 0;
+                              overflow: hidden;
+                              transition: max-height 0.2s ease-out;
+                            }
+                            </style>
+                            
+                            
+                            {% comment %} <h2>FAQs</h2>
+                            <p>some of the frequently asked questions</p>
+                            <button class="faq-accordion">How much does it cost?</button>
+                            <div class="panel">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                            
+                            <button class="faq-accordion">Lorem ipsum dolor sit amet consectetur.</button>
+                            <div class="panel">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                            
+                            <button class="faq-accordion">Lorem ipsum dolor sit amet consectetur adipisicing.</button>
+                            <div class="panel">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div> {% endcomment %}
+                            
+                            <script>
+                            var acc = document.getElementsByClassName("faq-accordion");
+                            var i;
+                            
+                            for (i = 0; i < acc.length; i++) {
+                              acc[i].addEventListener("click", function() {
+                                this.classList.toggle("active");
+                                var panel = this.nextElementSibling;
+                                if (panel.style.maxHeight) {
+                                  panel.style.maxHeight = null;
+                                } else {
+                                  panel.style.maxHeight = panel.scrollHeight + "px";
+                                } 
+                              });
+                            }
+                            </script>
+                            
+                               
+                        </div>
+                    </div>
+                    </div>
+    
+                   
+                    <div class="col-md-2">
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+
+    <footer class="footer-area section-padding-100-50 bg-img bg-overlay" style="background-image: url({% static 'estimator/assets/img/bg-footer.jpg'%});">
+
+        <div class="main-footer-area">
+            <div class="container">
+                <div class="row">
+        
+                    <!-- Footer Widget Area -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="footer-widget-area mb-25">
+                            <!-- Widget Title -->
+                            <div class="widget-title">
+                                <a href="#"><img src="{% static 'estimator/assets/img/demo-logo.png'%}" alt="" width="200px"></a>
+                            </div>
+                            <p class="mb-30">
+                                Construction Business Partners
+                            </p>
+                            <!-- Social Info -->
+                            <div class="footer-social-info">
+                                <a href="https://web.facebook.com//" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="https://www.instagram.com/"  target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a href="https://twitter.com/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Footer Widget Area -->
+                    {% comment %} <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="footer-widget-area mb-50">
+                            <!-- Widget Title -->
+                            <div class="widget-title">
+                                <h6>Testimonials</h6>
+                            </div> 
+        
+                             <!-- Testimonials Slides -->
+                            <div class="testimonials-slides owl-carousel">
+        
+                                <div class="single-slide">
+                                    <!-- Single Testimonial -->
+                                    <div class="single-testimonial">
+                                        <p>“Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis.</p>
+                                        <span>Robert Stephens</span>
+                                    </div>
+                                </div>
+                            
+
+        
+                            </div>
+                        </div>
+                    </div> {% endcomment %}
+        
+                    <!-- Footer Widget Area -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="footer-widget-area mb-50">
+                            <div class="widget-title">
+                                <h6>Navigations</h6>
+                            </div>
+        
+                            <nav>
+                                <ul class="fitness-classes">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#about">About Us</a></li>
+                                    <li><a href="#pricing">Pricing</a></li>
+                            
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+        
+                    <!-- Footer Widget Area -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="footer-widget-area mb-50">
+                            <div class="widget-title">
+                                <h6>Contact</h6>
+                            </div>
+        
+                            <!-- Single Contact -->
+                             {% comment %} <div class="single-contact mb-30">
+                                <span>Address:</span>
+                                <p>481 Creekside Lane Avila <br>Beach, CA 93424</p>
+                            </div> {% endcomment %}
+        
+                            <!-- Single Contact -->
+                            <div class="single-contact mb-10">
+                                <span>Phone:</span>
+                                <p><i class="fa fa-phone"></i> <a style="text-decoration: none !important;color: white !important;" href="tel:+234(0)704-318-3017">+234(0)704-318-3017</a></p>
+                            </div>
+        
+                            <!-- Single Contact -->
+                            <div class="single-contact mb-10">
+                                <span>Email:</span>
+                                <p><i class="fa fa-envelope"></i> <a href="#" style="color:#0259bd !important;">contact.us@</a></p>
+                            </div>
+        
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+        
+        <!-- Copywrite Area -->
+        <div class="bottom-footer-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <p style="color:#ffffff !important;">
+                            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All Rights Reserved | Designed by <a href="#" target="_blank" style="color:#ffffff !important;"> MarviesSoftTechnology Services</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </footer>
+
+</body>
+<script src="{% static 'estimator/main-js.js'%}"></script>
+<script src="https://kit.fontawesome.com/6f9464220c.js" crossorigin="anonymous"></script>
+
+<script src="{% static 'estimaator/assets/bootstrap/js/bootstrap.min.js'%}"></script>
+<script src="{% static 'estimator/js/jquery/jquery-2.2.4.min.js'%}"></script>
+<script src="{% static 'estimator/js/plugins/plugins.js'%}"></script>
+<script src="{% static 'estimator/js/swiper.js'%}"></script>
+<script src="{% static 'estimator/js/swiper.min.js'%}"></script>
+
+</html>
